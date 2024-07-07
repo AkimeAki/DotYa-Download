@@ -2,7 +2,7 @@ import { BetaAnalyticsDataClient } from "@google-analytics/data";
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		const analyticsDataClient = new BetaAnalyticsDataClient();
+		// const analyticsDataClient = new BetaAnalyticsDataClient();
 
 		// const [response] = await analyticsDataClient.runReport({
 		// 	property: `properties/${env.GOOGLE_ANALYTICS_PROPERTY_ID}`,

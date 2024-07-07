@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.4.5",
 		"@cloudflare/workers-types": "^4.20240620.0",
+		"@google-analytics/data": "^4.7.0",
 		"typescript": "^5.4.5",
 		"wrangler": "^3.60.3"
 	},

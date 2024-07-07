@@ -1,0 +1,21 @@
+{
+	"name": "どっとやダウンロード",
+	"dockerComposeFile": "./compose.yml",
+	"service": "app",
+	"workspaceFolder": "/app/",
+	"customizations": {
+		"vscode": {
+			"extensions": ["biomejs.biome", "EditorConfig.EditorConfig"],
+			"settings": {
+				"editor.formatOnSave": true,
+				"editor.defaultFormatter": "biomejs.biome",
+				"files.readonlyInclude": {
+					"node_modules/**/*": true,
+					".git/**/*": true,
+					"dist/**/*": true
+				}
+			}
+		}
+	},
+	"shutdownAction": "stopCompose"
+}

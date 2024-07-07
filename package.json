@@ -1,0 +1,25 @@
+{
+	"name": "dotya",
+	"type": "module",
+	"version": "1.0.0",
+	"private": true,
+	"engines": {
+		"node": "20.15.0"
+	},
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"format": "npx @biomejs/biome format --write ./ --log-level=info",
+		"lint": "npx @biomejs/biome lint --write ./ --log-level=info"
+	},
+	"dependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.4.5",
+		"@cloudflare/workers-types": "^4.20240620.0",
+		"typescript": "^5.4.5",
+		"wrangler": "^3.60.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3"
+	}
+}

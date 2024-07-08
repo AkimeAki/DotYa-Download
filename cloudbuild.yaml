@@ -4,7 +4,7 @@ steps:
       ["ci"]
   # デプロイ
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["functions", "deploy", "${_FUNCTION_NAME}", "--trigger-topic", "${_TOPIC_ID}", "--region=asia-northeast1", "--max-instances", "1"]
+    args: ["functions", "deploy", "${_FUNCTION_NAME}", "--trigger-topic", "${_TOPIC_ID}", "--region=asia-northeast1", "--max-instances", "1", "--source=."]
 
 options:
   logging: "CLOUD_LOGGING_ONLY"

@@ -3,9 +3,6 @@
 	"type": "module",
 	"version": "1.0.0",
 	"private": true,
-	"engines": {
-		"node": "20.15.0"
-	},
 	"scripts": {
 		"format": "npx @biomejs/biome format --write ./ --log-level=info",
 		"lint": "npx @biomejs/biome lint --write ./ --log-level=info"

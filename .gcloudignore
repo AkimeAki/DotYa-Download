@@ -1,1 +1,13 @@
-Dockerfile
+/Dockerfile
+/.git/
+/.github/
+/.devcontainer.json
+/.editorconfig
+/.gcloudignore
+/.gitignore
+/biome.json
+/cloudbuild.yaml
+/compose.yaml
+/DotYaDownload.code-workspace
+/Makefile
+/README.md

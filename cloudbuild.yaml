@@ -9,6 +9,8 @@ steps:
       "deploy",
       "${_FUNCTION_NAME}",
       "--gen2",
+      "--trigger-topic",
+      "${_TOPIC_ID}",
       "--region=asia-northeast1",
       "--source=.",
       "--entry-point=helloPubSub"

@@ -11,7 +11,6 @@ steps:
       "--gen2",
       "--region=asia-northeast1",
       "--source=.",
-      "--stage-bucket=dotya-download-functions-sources",
       "--entry-point=helloPubSub"
     ]
 

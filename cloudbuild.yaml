@@ -4,7 +4,16 @@ steps:
       ["ci"]
   # デプロイ
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["functions", "deploy", "${_FUNCTION_NAME}", "--trigger-topic", "${_TOPIC_ID}", "--region=asia-northeast1", "--max-instances", "1", "--source=.", "--stage-bucket=dotya-download-functions-sources", "--entry-point=helloPubSub"]
+    args: [
+      "functions",
+      "deploy",
+      "${_FUNCTION_NAME}",
+      "--gen2",
+      "--region=asia-northeast1",
+      "--source=.",
+      "--stage-bucket=dotya-download-functions-sources",
+      "--entry-point=helloPubSub"
+    ]
 
 options:
   logging: "CLOUD_LOGGING_ONLY"
